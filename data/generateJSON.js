@@ -11,9 +11,14 @@ let nmDistricts = [];
 let nyDistricts = [];
 let okDistricts = [];
 let txDistricts = [];
+<<<<<<< HEAD
 let wvDistricts = [];
 
 let microStateNames = ["California", "Colorado", "Florida", "Iowa", "Louisiana", "Missouri", "NewMexico", "NewYork", "Oklahoma", "Texas", "WestVirginia"];
+=======
+
+let microStateNames = ["California", "Colorado", "Florida", "Iowa", "Louisiana", "Missouri", "NewMexico", "NewYork", "Oklahoma", "Texas"];
+>>>>>>> db2a5b620a8bfe4b2dbde64073fdea7be2b3bd76
 
 for (let microState of microStateNames){
   global[microState + "_csv"] = fs.readFileSync(microState+".csv", 'utf8');
@@ -30,12 +35,19 @@ let newMexico = NewMexico_csv.split("\n");
 let newYork = NewYork_csv.split("\n");
 let oklahoma = Oklahoma_csv.split("\n");
 let texas = Texas_csv.split("\n");
+<<<<<<< HEAD
 let westVirginia = WestVirginia_csv.split("\n");
+=======
+>>>>>>> db2a5b620a8bfe4b2dbde64073fdea7be2b3bd76
 
 let stateNames_csv = fs.readFileSync('states.csv', 'utf8');
 let stateNames = stateNames_csv.split("\n");
 
+<<<<<<< HEAD
 let microStateCSVData = [california, colorado, florida, iowa, louisiana, missouri, newMexico, newYork, oklahoma, texas, westVirginia];
+=======
+let microStateCSVData = [california, colorado, florida, iowa, louisiana, missouri, newMexico, newYork, oklahoma, texas];
+>>>>>>> db2a5b620a8bfe4b2dbde64073fdea7be2b3bd76
 
 for (let stateData of microStateCSVData){
   for (let index=1; index<=6; index++){
@@ -75,9 +87,12 @@ for (let stateData of microStateCSVData){
     else if (stateData == texas){
       txDistricts.push(district);
     }
+<<<<<<< HEAD
     else if (stateData == westVirginia){
       wvDistricts.push(district);
     }
+=======
+>>>>>>> db2a5b620a8bfe4b2dbde64073fdea7be2b3bd76
   }
 }
 
@@ -102,4 +117,7 @@ fs.writeFileSync('NewMexico.json', JSON.stringify(nmDistricts), 'utf8');
 fs.writeFileSync('NewYork.json', JSON.stringify(nyDistricts), 'utf8');
 fs.writeFileSync('Oklahoma.json', JSON.stringify(okDistricts), 'utf8');
 fs.writeFileSync('Texas.json', JSON.stringify(txDistricts), 'utf8');
+<<<<<<< HEAD
 fs.writeFileSync('WestVirginia.json', JSON.stringify(wvDistricts), 'utf8');
+=======
+>>>>>>> db2a5b620a8bfe4b2dbde64073fdea7be2b3bd76

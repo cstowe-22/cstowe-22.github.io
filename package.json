@@ -19,7 +19,7 @@
     "build": "node util/build.js",
     "postbuild": "node server.js",
     "publish": "npm run production:start",
-    "production:start": "open fundingtograduation.github.io"
+    "production:start": "open ../cstowe-22.github.io/build/index.html"
   },
   "author": "",
   "license": "ISC"
