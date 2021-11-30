@@ -1,0 +1,26 @@
+{
+  "name": "FundingToGraduation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "fs-extra": "^10.0.0",
+    "jest": "^27.4.0",
+    "jsdoc": "^3.6.7",
+    "jshint": "^2.13.1",
+    "save": "^2.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "prebuild": "node util/prebuild.js",
+    "build": "node util/build.js",
+    "postbuild": "node server.js",
+    "publish": "npm run production:start",
+    "production:start": "open fundingtograduation.github.io"
+  },
+  "author": "",
+  "license": "ISC"
+}
